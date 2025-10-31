@@ -1,0 +1,169 @@
+/* Hoja estilos CSS de ejemplo de página responsive */
+body {
+    background-image : url(../static/imagenes/fondo.jpg);
+    font-family: "Consolas","Open Sans","Arial","Helvetica", sans-serif;
+    margin:0;
+    color: #0fff26
+}
+h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    letter-spacing: -2px;
+    margin-left: 10px;
+    padding-left: 50px;
+    background: transparent url(../static/imagenes/logoVerde.png) no-repeat left center;
+    font-size: 35px;
+}
+ul {
+    margin-top: 0px ;
+    margin-left: 35px;
+}
+li {
+    display:inline;
+    padding: 4%;
+}
+a{
+    color: #0fff26;
+}
+h2 {
+    text-align: center;
+    text-shadow: rgb(19, 17, 17) 3px 3px;
+    margin-bottom: 8px;
+    font-size: 25px;
+    letter-spacing: 4px;
+}
+/* Clase lleva delante "." */
+.imagenes {
+    display: flex;
+    flex-wrap: row;
+    justify-content: space-between;
+    align-items: center;
+}
+img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    background-color: #0fff26;
+    width: 19%;
+}
+form {
+background-color: white;
+margin: 10px;
+padding: 20px;
+border: solid 4px black;
+color: black;
+}
+fieldset {
+    float: left;
+    margin-top: 2%;
+}
+legend {
+    font-size: 2em;
+    text-shadow: #00000023 3px 3px;
+}
+label {
+    display: block;
+}
+/* id lleva delante # */
+#enviar {
+   font-size: 20px;
+   width: 140px;
+   height: 50px;
+   color: white;
+   background-color: green;
+   border-radius: 11px;
+   display: block;
+   clear: both;
+}
+.flotar {
+    float: left;
+    width: 25%;
+}
+.sinFlotar {
+    clear: left;
+    padding-left: 1%;
+}
+footer {
+    padding: 30px;
+    margin-top: 50px;
+    background-color: #0fff26;
+    border-top: solid 4px black;
+    color: black;
+}
+.inicio {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: bold;
+    color: black;
+    /* se define aquí para que no coja las propiedades de "a". Debería coger las propiedades de footer, pero "a" prevalece. */
+}
+/* Punto de ruptura para tablets */
+@media (min-width: 768px) {
+    body {
+        color: #ffff13;
+    }
+    h1 {
+        margin-left: 20px;
+        padding-left: 60px;
+        background: transparent url(../static/imagenes/logoAmarillo.png) no-repeat left center;
+        font-size: 50px;
+    }
+    ul {
+        margin-left: 60px;
+    }
+    a {
+        color:#ffff13
+    }
+    h2 {
+        font-size: 40px;
+        letter-spacing: 12px;
+    }
+    img {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 8px;
+        background-color: #ffff13;
+    }
+    .flotar {
+        width: 20%;
+    }
+    footer {
+        background-color: #ffff13;
+    }
+}
+/* Punto de ruptura para escritorio */
+@media (min-width: 992px) {
+    body {
+        color: white;
+    }
+    h1 {
+        margin-left: 30px;
+        padding-left: 70px;
+        background: transparent url(../static/imagenes/logoBlanco.png) no-repeat left center;
+        font-size: 60px;
+    }
+    ul {
+        margin-left: 70px;
+    }
+    a {
+        color:white
+    }
+    h2 {
+        font-size: 50px;
+        letter-spacing: 16px;
+    }
+    img {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px;
+        background-color: white;
+    }
+    .flotar {
+        width: 15%;
+    }
+    footer {
+        background-color: white;
+    }
+}
